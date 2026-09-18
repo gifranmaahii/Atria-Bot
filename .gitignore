@@ -1,0 +1,39 @@
+# ─── Secrets & credentials — NEVER commit ───────────────────────────
+/api_keys.json
+/gsuite.txt
+/9router_export.json
+/9router_targets.json
+/models.json
+petani-proxy/config/settings.json
+petani-proxy/output/
+
+# ─── Runtime logs ───────────────────────────────────────────────────
+/logs/
+*.log
+*.err
+
+# ─── Python cache ───────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ─── IDE / agent worktrees ──────────────────────────────────────────
+.kilo/
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ─── Backups & debug scratch (root only) ─────────────────────────────
+*.bak
+/__*.py
+/_*.py
+/_*.txt
+/_*.png
+/_*.json
+
+# ─── Unrelated projects / external deps ─────────────────────────────
+# main.py = bot x.ai/Grok terpisah, bukan bagian pipeline Atria
+/main.py
+# petani-proxy = dependency eksternal (github.com/harezadmm/petani-proxy), clone terpisah
+/petani-proxy/
